@@ -1,2 +1,0 @@
-# TOP
-The Odin Project
