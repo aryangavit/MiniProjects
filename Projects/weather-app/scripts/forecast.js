@@ -20,15 +20,15 @@ const getWeather = async(id)=>{
     return data[0];
 }
 
-getCity('mumbai')
-    .then(data=>{
-        // console.log(data);
-        return getWeather(data.Key);
-    })
-    .then((data)=>{
-        console.log(data);
-    })
-    .catch(error=>{
-        console.log(error);
-    })
+// getCity('mumbai')
+//     .then(data=>{
+//         // console.log(data);
+//         return getWeather(data.Key);
+//     })
+//     .then((data)=>{
+//         console.log(data);
+//     })
+//     .catch(error=>{
+//         console.log(error);
+//     })
 
