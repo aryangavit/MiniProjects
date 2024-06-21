@@ -7,12 +7,12 @@
 </head>
 <body class="text-gray-600 font-Nunito">
     
-    <div class="border-2 border-red-500" > <!--content wrapper-->
-        <div><!--div to srround navigation-->
+    <div class="border-2 border-red-500 grid md:grid-cols-3" > <!--content wrapper-->
+        <div md:col-span-1><!--div to srround navigation-->
             <nav>
                 <div>
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-                        <a class="border border-red-500" href="/">Food Recipie</a>
+                        <a class="border border-red-500" href="/">Food Recipies</a>
                     </h1>
                 </div>
                 <ul>
@@ -35,10 +35,10 @@
             </nav>
         </div><!--end of nav-->
 
-        <main class="px-16 py-6">
-            <div>
+        <main class="px-16 py-6 bg-gray-100 md:col-span-2" >
+            <div class="border border-red-500 flex justify-end">
                 <a class="border border-red-500" href="#">Log in</a>
-                <a class="border border-red-500" href="#">Sign up</a>
+                <a class="border border-red-500 ml-2" href="#">Sign up</a>
             </div>
 
             <header class="border border-red-500">
@@ -48,13 +48,36 @@
 
             <div>
                 <h4 class="font-black mt-12 border-b border-gray-200">Latest Recipes</h4>
-                <div class="border border-red-500">
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
                     <!--cards go here-->
-                    <div class="mt-8">
-                        <img src="../public/img/stew.jpg" alt="stew">
-                        <div>
-                            <span>5 Bean Chilli Stew</span>
-                            <span>Recipe by xyz</span>
+                    <div class="card">
+                        <img src="../public/img/stew.jpg" alt="stew" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">5 Bean Chilli Stew</span>
+                            <span class="block text-gray-500 text-sm">Recipe by xyz</span>
+                        </div>
+                        <div class="badge">
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../public/img/noodles.jpg" alt="noodles" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Veg Noodles</span>
+                            <span class="block text-gray-500 text-sm">Recipe by xyz</span>
+                        </div>
+                        <div class="badge">
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../public/img/curry.jpg" alt="curry" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Tofu Curry</span>
+                            <span class="block text-gray-500 text-sm">Recipe by xyz</span>
+                        </div>
+                        <div class="badge">
+                            <span>25 mins</span>
                         </div>
                     </div>
                 </div>
@@ -64,8 +87,8 @@
                     <!---cards go here-->
                 </div>
 
-                <div class="border border-red-500">
-                    <div>Load more</div>
+                <div class="border border-red-500 flex justify-center">
+                    <div class="bg-gray-400 text-black">Load more</div>
                 </div>
             </div>
         </main>
